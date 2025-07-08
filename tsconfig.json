@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",                    // Использовать NodeNext для работы с модулями ES
+    "moduleResolution": "NodeNext",           // Разрешение модулей по стандарту NodeNext
+    "target": "ES2022",                       // Целевая версия ECMAScript
+    "esModuleInterop": true,                  // Для совместимости с CommonJS модулями
+    "allowSyntheticDefaultImports": true,     // Разрешить синтетические default импорты
+    "resolveJsonModule": true,                // Разрешить импорт JSON файлов
+    "strict": true,                           // Включение строгой типизации
+    "skipLibCheck": true,                     // Пропуск проверки типов в библиотеках
+    "forceConsistentCasingInFileNames": true, // Обеспечить консистентность в именах файлов
+    "outDir": "dist",                         // Указание папки для компиляции
+    "isolatedModules": true,                  // Включение изолированных модулей (для совместимости с Babel)
+    "lib": ["ES2022", "DOM"]                  // Использование библиотек ES2022 и DOM
+  },
+  "include": [
+    "src/**/*.ts",                           // Включить все TypeScript файлы в папке src
+    "types/**/*.d.ts"                        // Включить все файлы типов в папке types
+  ],
+  "exclude": [
+    "node_modules",                          // Исключить папку node_modules
+    "dist",                                  // Исключить папку dist (уже есть в outDir)
+    "**/*.test.ts",                          // Исключить тестовые файлы
+    "src/**/*.spec.ts"                       // Исключить другие тестовые файлы
+  ]
+}
