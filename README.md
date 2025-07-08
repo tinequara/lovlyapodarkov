@@ -59,7 +59,7 @@ This script is designed for automatically searching for and purchasing gifts in 
 
 ## Notes
 
-- The script uses the `gramjs` library to interact with the Telegram API.
+- The script uses the `gramjs` developer (https://github.com/gram-js/gramjs) library to interact with the Telegram API.
 - To work with the Telegram API, you need to obtain your `API_ID` and `API_HASH`.
 - The script runs in the background without requiring constant monitoring.
 
